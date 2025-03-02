@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange: #fb7413;
+    --white: #ffffff;
+    --light_grey: #959eac;
+    --dark_blue: #252d37;
+    --very_dark_blue: #121417;
+}
+
+* {
+    font-family: 'Inter';
+    color: var(--white);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very_dark_blue);
+}
+
+main {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--dark_blue);
+}
+
+/* Headings and paragraph */
+h1 {
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+    color: var(--light_grey);
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.rate img {
+    width: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(149, 158, 172, 0.1);
+}
+
+.rate h1 {
+    margin-bottom: 5px;
+}
+
+.rate .star {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.rate button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-weight: 500;
+    color: var(--light_grey);
+    background-color: rgba(149, 158, 172, 0.1);
+}
+
+.rate button:hover {
+    cursor: pointer;
+    color: var(--very_dark_blue);
+    background-color: var(--orange);
+}
+
+.rate button:focus {
+    cursor: pointer;
+    color: var(--very_dark_blue);
+    background-color: var(--white);
+}
+
+.star button.selected {
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.rate input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--very_dark_blue);
+    background-color: var(--orange);
+}
+
+.rate input:hover {
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.thankyou {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.thankyou img {
+    width: 200px;
+}
+
+.selected {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(149, 158, 172, 0.1);
+}
+
+#rated {
+    color: var(--orange);
+}
